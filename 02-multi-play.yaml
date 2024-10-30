@@ -8,4 +8,5 @@
   hosts: web
   tasks:
   - name: PLAY02 TASK02
-    ansible.builtin.message
+    ansible.builtin.message:
+     msg: "hello"
