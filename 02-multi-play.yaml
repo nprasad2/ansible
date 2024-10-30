@@ -7,5 +7,5 @@
 - name : PLAY-02
   hosts : web
   tasks:
-  -name : PLAY02 TASK02
-   ansible.buitin.debug
+  - name : PLAY02 TASK02
+    ansible.buitin.debug
