@@ -1,7 +1,10 @@
 - name : variable to print
   hosts : web
+  vars:
+    NAME : "Hari Prasad"
+    EXP : "12"
   tasks:
   - name : print the info
     ansible.builtin.debug:
-      msg: "Hi i m hari prasad having 12 years of experience"
+      msg: "Hi i m {{NAME}} having {{EXP}} years of experience"
 
