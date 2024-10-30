@@ -8,3 +8,10 @@
     ansible.builtin.debug:
       msg: "Hi i m {{NAME}} having {{EXP}} years of experience"
 
+  - name : local vars
+    vars:
+      NAME : "Hari Prasad"
+      EXP : "12"
+    ansible.builtin.debug:
+      msg: "my {NAME} && experience {{EXP}}"
+
