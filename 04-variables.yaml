@@ -3,5 +3,5 @@
   tasks:
   - name : print the info
     ansible.builtin.debug:
-      msg:"Hi i m hari prasad having 12 years of experience"
+      msg: "Hi i m hari prasad having 12 years of experience"
 
