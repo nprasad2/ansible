@@ -11,7 +11,7 @@
   - name : local vars
     vars:
       NAME : "Hari Prasad"
-      EXP : "12"
+      EXP : "15"
     ansible.builtin.debug:
-      msg: "my {NAME} && experience {{EXP}}"
+      msg: "my {{NAME}} && experience {{EXP}}"
 
