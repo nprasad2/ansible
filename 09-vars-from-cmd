@@ -1,0 +1,6 @@
+- name : vars from cmd
+  hosts: web
+  tasks:
+  - name : vars from cmd
+    ansible.builtin.debug:
+     msg: "Hello i m {{NAME}} and age is {{AGE}}"
