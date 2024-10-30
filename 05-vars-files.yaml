@@ -5,4 +5,4 @@
   tasks:
   - name:
     ansible.builtin.debug:
-      msg : i m {{NAME}} and my age is {{}}
+      msg : i m {{NAME}} and my age is {{AGE}}
