@@ -9,4 +9,5 @@
     ansible.builtin.dnf:
       name: nginx
       state: present
+      state: Enabled
     when: ansible_os_family == "RedHat"
