@@ -1,5 +1,5 @@
 - name : ansible data type
-  hosts : local
+  hosts : web
   vars:
     course: "Devops"
     duration : 120 
@@ -16,5 +16,5 @@
       cm: ansible
   tasks:
   - name: print the course details
-    ansible.buitin.debug:
+    ansible.builtin.debug:
        msg: "Hi here is days types {{topics}} and {{tools}} and {{live}}"
