@@ -4,5 +4,11 @@
   - name : user reading
     ansible.builtin.command: id expense
     register: USER # user is a variable that get output from above command
+    ignore_errors = True
+  - name : user details
+    ansible.builtin,debug:
+      msg: "user info : {{USER}}"
+
+
 
 
