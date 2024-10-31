@@ -1,0 +1,8 @@
+- name : user adding
+  hosts: web
+  tasks :
+  - name : user reading
+  ansible.builtin.command: id expense
+  register: USER # user is a variable that get output from above command
+  
+
