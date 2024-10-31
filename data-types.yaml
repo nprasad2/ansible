@@ -1,6 +1,6 @@
 - name : ansible data type
   hosts : local
-  connection:local
+  connection: local
   vars:
     course: "Devops"
     duration : 120 
