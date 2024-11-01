@@ -2,9 +2,9 @@
   hosts: web
   tasks:
   - name: loops advanced
-    ansible.builtin.package
-    name: "{{item.name}}"
-    state: "{{item.state}}"
+    ansible.builtin.package:
+     name: "{{item.name}}"
+     state: "{{item.state}}"
 
   loop:
   - {name: 'mysql', state: 'absent'}
