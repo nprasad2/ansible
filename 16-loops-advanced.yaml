@@ -1,5 +1,6 @@
 - name : loops advanced
   hosts: web
+  become: yes
   tasks:
   - name: loops advanced
     ansible.builtin.package:
