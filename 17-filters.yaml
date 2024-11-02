@@ -15,3 +15,13 @@
        greet : "hello ansible"
     ansible.builtin.debug:
         msg: "{{greet | upper}}"
+  - name : min
+    vars:
+       num : [1,2,3,4,5]
+    ansible.builtin.debug:
+         msg: "{{ num | {{ item }} }}"
+    loop :
+    - min
+    - max
+    - unique
+    
