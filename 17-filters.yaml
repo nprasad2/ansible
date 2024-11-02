@@ -1,0 +1,4 @@
+- name : demo on filters
+  hosts: web
+  tasks:
+  
