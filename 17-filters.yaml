@@ -8,8 +8,7 @@
     vars : 
        greeting : "Hello Ansible"
     ansible.builtin.debug:
-       msg: "{{greeting | upper }}"
-       msg: "{{greeting | lower }}"
+       msg: "{{greeting | upper }} , {{greeting | lower }}"
   - name: upper
     vars : 
        greet : "hello ansible"
