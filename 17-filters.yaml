@@ -14,11 +14,18 @@
        greet : "hello ansible"
     ansible.builtin.debug:
         msg: "{{greet | upper}}"
-  - name : min
-    vars:
-       num : [1,2,3,4,5]
+  - name : loop
+    vars :
+       num : [20,7,6,8,9]
     ansible.builtin.debug:
-         msg: "{{ num | item }}"
+      msg: >-
+        {% if item == 'min' %}
+        Minimum value is {{ num | min }}
+        {% elif item == 'max' %}
+        Maximum value is {{ num | max }}
+        {% elif item == 'unique' %}
+        Unique values are {{ num | unique | join(', ') }}
+        {% endif %}
     loop :
     - min
     - max
