@@ -2,5 +2,5 @@
   hosts: web
   tasks:
   - name: print the default varables
-    ansible.buitin.debug:
+    ansible.builtin.debug:
       msg: "Hello {{ course | default('Ansible')}}"
