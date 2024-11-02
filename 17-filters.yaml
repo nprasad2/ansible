@@ -10,3 +10,8 @@
     ansible.builtin.debug:
        msg: "{{greeting | upper }}"
        msg: "{{greeting | lower }}"
+  - name: upper
+    vars : 
+       greet : "hello ansible"
+    ansible.builtin.debug:
+        msg: "{{greet | upper}}"
