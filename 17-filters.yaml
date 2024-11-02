@@ -1,4 +1,6 @@
 - name : demo on filters
   hosts: web
   tasks:
-  
+  - name: print the default varables
+    ansible.buitin.debug:
+      msg: "Hello {{ course | default('Ansible')}}"
