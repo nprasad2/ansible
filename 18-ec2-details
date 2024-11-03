@@ -2,5 +2,7 @@
   hosts : web
   tasks:
   - name: ec2 details
+    vars:
+      register : ec2_instances
     ansible.builtin.debug:
      msg: "{{ec2_instances}}"
