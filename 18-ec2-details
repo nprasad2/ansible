@@ -1,5 +1,6 @@
 - name : ec2 details
-  hosts : web
+  hosts : local
+  become : yes
   tasks:
   - name: ec2 details
     amazon.aws.ec2_instance_info:
