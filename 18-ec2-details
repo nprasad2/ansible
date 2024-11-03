@@ -3,7 +3,8 @@
   tasks:
   - name: ec2 details
     amazon.aws.ec2_instance_info:
-      register : ec2_instances
+      region: us-west-2 
+    register : ec2_instances
   - name : ec2 
     ansible.builtin.debug:
       msg: "{{ec2_instances}}"
