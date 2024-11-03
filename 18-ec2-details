@@ -1,0 +1,6 @@
+- name : ec2 details
+  host : web
+  tasks:
+  - name: ece details
+    ansible.builtin.debug:
+     msg: "{{ec2_instances}}"
