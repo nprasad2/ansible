@@ -3,7 +3,7 @@
   tasks:
   - name: ec2 details
     amazon.aws.ec2_instance:
-    vars:
       register : ec2_instances
+  - name : ec2 
     ansible.builtin.debug:
-     msg: "{{ec2_instances}}"
+      msg: "{{ec2_instances}}"
