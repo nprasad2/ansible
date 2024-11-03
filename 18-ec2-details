@@ -2,6 +2,7 @@
   hosts : web
   tasks:
   - name: ec2 details
+    amazon.aws.ec2_instance:
     vars:
       register : ec2_instances
     ansible.builtin.debug:
