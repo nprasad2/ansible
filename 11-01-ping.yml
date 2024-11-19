@@ -1,0 +1,5 @@
+- name: ping the server
+  hosts: web
+  tasks:
+  - name : my sedond time
+    ansible.builtin.ping:
