@@ -1,8 +1,0 @@
-- name : varibles from files
-  hosts: web
-  vars_files:
-   - vars.yaml
-  tasks:
-  - name:
-    ansible.builtin.debug:
-      msg : i m {{NAME}} and my age is {{AGE}}

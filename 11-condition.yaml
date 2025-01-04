@@ -1,5 +1,0 @@
-- name : condition
-  hosts : web
-  tasks :
-  - name :
-    

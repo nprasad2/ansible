@@ -1,6 +1,0 @@
-- name : vars from inventory
-  hosts : web
-  tasks :
-  - name : vars from invemntory
-    ansible.builtin.debug:
-      msg: "Hello, i m {{NAME}} and my age is {{AGE}}"
