@@ -1,5 +1,6 @@
-- name : my first playbook
-  hosts : web
+- name: My First Playbook
+  hosts: web
   tasks:
-  - name : my message
-     ansible.builtin.ping
+    - name: My Message
+      ansible.builtin.ping:
+
