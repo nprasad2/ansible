@@ -1,0 +1,5 @@
+- name : my first playbook
+  hosts : web
+  tasks:
+  - name : my message
+    ansible.builtin.ping
