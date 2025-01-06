@@ -1,0 +1,21 @@
+- name : variables
+  hosts : web
+  become : yes
+  vars:
+    COURSE : "Devops"
+    DURATION : 120
+    TOPICS:
+     - Linux
+     - ansible
+     - git
+     - Jenkins
+     - kubernates
+    NOTES: 
+     CI : Jenkins
+     CD : ansible
+     Cloud : AWS
+  tasks:
+   - name : variables
+     ansible.builtin.debug:
+       msg: " Hi i m learving {{ COURSE }}, with {{ DURATION }} , the topics of {{ TOPICS}}
+         and note of {{ NOTES }}"
